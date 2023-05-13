@@ -20,6 +20,7 @@ if __name__ == "__main__":
     
     with open(os.path.join(dirpath, 'units_originchange.csv'), 'w', encoding='utf-8') as f:
         f.write(clist)
+    print('step1 done')
 
 
 
@@ -45,3 +46,4 @@ if __name__ == "__main__":
     with open(os.path.join(dirpath, 'units_mod.csv'), 'w', encoding='utf-8') as fw:
         for i in range(len(unitrowmod)):
             fw.write(unitrowmod[i] + '\n')
+    print('step2 done')
